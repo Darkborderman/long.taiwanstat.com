@@ -3,6 +3,14 @@
     "title": "用數據看台灣 - 統計資料",
     "page": [
       {
+        "title": "台灣青年就業視覺化",
+        "url": "youth-jobs",
+        "img": "images/youth-jobs.png",
+        "description": "台灣青年就業視覺化",
+        "author": "曾大瑋"
+
+      },
+      {
         "title": "移工的台灣夢",
         "url": "foreign-worker",
         "img": "images/foreign-worker.png",
