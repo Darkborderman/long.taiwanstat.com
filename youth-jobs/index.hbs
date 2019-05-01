@@ -1,25 +1,33 @@
 <!DOCTYPE html>
+
 <head>
-  {{> head}}
+    {{> head}}
     <!-- my js & css -->
     <script src="https://d3js.org/d3.v4.min.js" defer></script>
     <script src="assets/js/setting.js" defer></script>
     <script src="assets/js/lineGraph.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-  {{>header}}
-  {{> start}}
-    <hr>
-    <h2 class="title">過勞之島,迫不得已？</h2>
+    {{>header}}
+    {{> start}}
+    <h2 class="title">前言</h2>
     <article>
-在台灣常常會看到有血汗工廠,超時加班等新聞
-久而久之被冠上了「過勞之島」的稱呼
-但是在薪水和其他因素比較下,變成必須向工作負擔妥協
-「過勞之島」會不會是迫不得己接受的結果呢？
+        台灣每年都有數萬名高職,大學,及研究所畢業生投入職場
+        也有尋找數年才找到心儀工作的青年
+        然而茫茫職涯,所選的選擇總不盡相同
+        這裡對18-29歲的青年在就業時的選擇及工作做視覺化
+    </article>
+    <hr>
+    <h2 class="title">工作時的考慮因素</h2>
+    <article>
+        「錢多,事少,離家近」已成過去式
+        現今「錢多,方便,工作穩定」為現在選擇時最優先的選項
+        工作負擔反而成為了可以妥協的目標
         <h3>
-將滑鼠置於點上可以顯示當期比率及種類
-將滑鼠置於圖表右上方的圖片顯示圖片敘述
+            將滑鼠置於點上可以顯示當期比率及種類
+            將滑鼠置於圖表右上方的圖片顯示圖片敘述
         </h3>
     </article>
     <main>
@@ -34,14 +42,14 @@
         <section class="detail" id="detail">
 
             <div id="info" class="info">
-本圖為青年勞工初次尋職時選擇工作的考慮因素折線圖
-用意為當有多種選擇時,青年勞工會以什麼當作最主要的考慮因素
-選項共有11種(選項可複選,故總和比率超過100%)
+                本圖為青年勞工初次尋職時選擇工作的考慮因素折線圖
+                用意為當有多種選擇時,青年勞工會以什麼當作最主要的考慮因素
+                選項共有11種(選項可複選,故總和比率超過100%)
             </div>
 
             <div class="checkmenu" id="checkmenu">
                 <fieldset>
-                    <legend id=checkbox-container >選擇要顯示的線段</legend>
+                    <legend id=checkbox-container>選擇要顯示的線段</legend>
                     <div><label><input type="checkbox" id="box-工作穩定" value="工作穩定" checked>工作穩定</label></div>
                     <div><label><input type="checkbox" id="box-待遇高" value="待遇高" checked>待遇高</label></div>
                     <div><label><input type="checkbox" id="box-工作負擔較輕" value="工作負擔較輕" checked>工作負擔較輕</label></div>
@@ -65,8 +73,15 @@
 
             <div class="stat" id="stat"></div>
         </section>
-
     </main>
+    <hr>
+    {{!-- <h2 class="title">過勞之島,迫不得已？</h2>
+    <article>
+        在台灣常常會看到有血汗工廠,超時加班等新聞
+        久而久之被冠上了「過勞之島」的稱呼
+        但是在薪水和其他因素比較下,變成必須向工作負擔妥協
+        「過勞之島」會不會是迫不得己接受的結果呢？
+    </article> --}}
     <div>資料來源</div>
     <ul>
         <li><a href="http://statdb.mol.gov.tw/html/svy05/0511menu.htm">105年青年勞工統計資料</a></li>
@@ -77,8 +92,8 @@
         <li><a href="http://statdb.mol.gov.tw/html/svy95/9501menu.htm">95年青年勞工統計資料</a></li>
     </ul>
     <!-- my charts -->
-  {{> end}}
-  <link rel="stylesheet" rel="css" href="assets/css/style.css">
+    {{> end}}
+    <link rel="stylesheet" rel="css" href="assets/css/style.css">
     <!-- my js & css -->
-  {{> footer}}
+    {{> footer}}
 </body>

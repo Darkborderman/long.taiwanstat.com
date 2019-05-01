@@ -71,12 +71,12 @@ function renderGraph() {
                     .transition()
                     .duration(200)
                     .attr(`r`, (d) => {
-                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`)
+                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`||d[`type`]==`通勤方便`)
                             return Setting.circle.strong.hover.radius;
                         else return Setting.circle.normal.hover.radius;
                     })
                     .attr(`opacity`, (d) => {
-                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`)
+                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`||d[`type`]==`通勤方便`)
                             return Setting.circle.strong.hover.opacity;
                         else return Setting.circle.normal.hover.opacity;
                     });
@@ -104,12 +104,12 @@ function renderGraph() {
                     .transition()
                     .duration(200)
                     .attr(`opacity`, (d) => {
-                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`)
+                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`||d[`type`]==`通勤方便`)
                             return Setting.circle.strong.default.opacity;
                         else return Setting.circle.normal.default.opacity;
                     })
                     .attr(`r`, (d) => {
-                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`)
+                        if (d[`type`] == `待遇高` || d[`type`] == `工作穩定` || d[`type`] == `工作負擔較輕`||d[`type`]==`通勤方便`)
                             return Setting.circle.strong.default.radius;
                         else return Setting.circle.normal.default.radius;
                     })

@@ -20,6 +20,10 @@ article {
     padding:10px;
     background:lightgray;
 }
+pre{
+    text-align: center;
+    white-space: pre-line;
+}
 svg{
 
 }
@@ -27,7 +31,7 @@ svg{
     margin-left:1%;
 }
 article{
-    white-space: pre-wrap;
+    white-space: pre-line;
 }
 .info{
     white-space: pre;
@@ -37,7 +41,7 @@ article{
     color:white;
     visibility: hidden;
     background-color:black;
-    opacity:0.7;
+    opacity:0.9;
     width:80%;
     border-color:black;
     border-style:solid;
@@ -59,7 +63,7 @@ article{
                 justify-content: flex-start;
     }
     .info{
-        width: 40%;
+        width: 30%;
     }
     main{
         display: -webkit-box;

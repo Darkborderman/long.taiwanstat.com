@@ -65,12 +65,12 @@ let Linegraph={
         .attr(`class`,(d)=>{return `${d[`year`]} ${d[`type`]}`;})
         .attr(`fill`,(d)=>{return Setting.color[d[`type`]];})
         .attr(`opacity`,(d)=>{
-            if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`)
+            if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`||d[`type`]==`通勤方便`)
             return Setting.circle.strong.default.opacity;
             else return Setting.circle.normal.default.opacity;
         })
         .attr(`r`,(d)=>{
-            if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`)
+            if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`||d[`type`]==`通勤方便`)
             return Setting.circle.strong.default.radius;
             else return Setting.circle.normal.default.radius;
         })
@@ -94,12 +94,12 @@ let Linegraph={
             .attr(`class`,(d)=>{return `${d[`type`]} line`;})
             .attr(`stroke`,(d)=>{return Setting.color[d[`type`]]})
             .attr(`stroke-width`,(d)=>{
-                if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`)
+                if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`||d[`type`]==`通勤方便`)
                 return Setting.line.strong.default.strokeWidth;
                 else return Setting.line.normal.default.strokeWidth;
             })
             .attr(`opacity`,(d)=>{
-                if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`)
+                if(d[`type`]==`待遇高`||d[`type`]==`工作穩定`||d[`type`]==`工作負擔較輕`||d[`type`]==`通勤方便`)
                 return Setting.line.strong.default.opacity;
                 else return Setting.line.normal.default.opacity;
             })
